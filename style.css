@@ -1,132 +1,55 @@
-/* Add your custom CSS styles here to further customize the design */
-
-
 /* Set a minimum height for header to prevent content jumping when navbar collapses */
-header {
-    min-height: 120px;
-}
+header { min-height: 120px; }
 
 /* Add padding and margin to the navigation links for better spacing */
-nav a {
-    padding: 8px 12px;
-    margin: 0 8px;
-}
+nav a { padding: 8px 12px; margin: 0 8px; }
 
 /* Add some background and padding to sections for better visual separation */
-section {
-    background-color: #f9f9f9;
-    padding: 30px;
-    border-radius: 5px;
-    margin-bottom: 30px;
-}
+section { background-color: #f9f9f9; padding: 30px; border-radius: 5px; margin-bottom: 30px; }
 
 /* Style the "About Me" section differently with a border */
-#about {
-    border: 1px solid #ccc;
-}
+#about { border: 1px solid #ccc; }
 
 /* Apply some styling to the work experience list items */
-#work li {
-    margin-bottom: 20px;
-}
+#work li { margin-bottom: 20px; }
 
 /* Style the contact information with larger font size and bold text */
-#contact li {
-    font-size: 18px;
-    font-weight: bold;
-}
-
-/* Add some padding and style the footer */
-footer {
-    background-color: #333;
-    color: #fff;
-    padding: 15px;
-}
+#contact li { font-size: 18px; font-weight: bold; }
 
 /* Apply a hover effect to navigation links */
-nav a:hover {
-    background-color: #555;
-}
+nav a:hover { background-color: #555; }
 
 /* Add some top margin to the header and navigation for better spacing */
-header, nav {
-    margin-top: 20px;
-}
+header, nav { margin-top: 20px; }
 
-/* Dark mode settings  */
-
-body {
-    background-color: #1a1a1a;
-     color: #fff;
-    }
-
-.navbar {
-      background-color: #333;
-}
-
-.navbar-brand,
-.nav-link {
-    color: #fff;
-}
-
-.navbar-brand:hover,
-.nav-link:hover {
-    color: #f8f9fa;
-}
-
-section {
-    background-color: #222;
-    border-radius: 5px;
-    padding: 30px;
-    margin-bottom: 30px;
-}
-
-/* Additional CSS for Projects Section */
-#projects .card {
-    background-color: #444;
-    border-color: #555;
-}
-
-#projects .card-title {
-    color: #fff;
-}
-
-#projects .card-text {
-    color: #ccc;
-}
-
-#projects ul {
-    color: #ccc;
-}
-
-#projects a.btn-primary {
-    background-color: #007bff;
-    border-color: #007bff;
-}
-
-#projects a.btn-primary:hover {
-    background-color: #0056b3;
-    border-color: #0056b3;
-}
-
-footer {
-    background-color: #333;
-    color: #fff;
-    padding: 15px;
-}
+/* Dark mode settings */
+body, .navbar, .navbar-brand, .nav-link, #projects .card, #projects .card-title, #projects .card-text, #projects ul, #projects a.btn-primary,
+section, #about, #work li, #contact li { background-color: #1a1a1a; color: #fff; }
 
 /* Adjust the size of Font Awesome icons */
-        .fa-2x {
-            font-size: 2rem;
-        }
+.fa-2x { font-size: 2rem; }
 
-        /* Create a one-row layout for the contact icons */
-        #contact .list-unstyled {
-            display: flex;
-            justify-content: center;
-        }
+/* Create a one-row layout for the contact icons */
+#contact .list-unstyled { display: flex; justify-content: center; }
 
-        /* Add spacing between the icons */
-        #contact .list-unstyled li {
-            margin: 0 10px;
-        }
+/* Add spacing between the icons */
+#contact .list-unstyled li { margin: 0 10px; }
+
+/* Style main titles to make them pop */
+h1, h2, h3 { color: #007bff; }
+
+/* Custom styles for mobile responsiveness */
+/* Adjust the padding for the header on smaller devices */
+@media (max-width: 576px) {
+    header { padding: 80px 0; }
+}
+
+/* Add smooth scroll transitions between sections */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Use the custom font 'Open Sans' for the entire page */
+body {
+    font-family: 'Open Sans', sans-serif;
+}
